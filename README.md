@@ -58,7 +58,7 @@ curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/energy/
 ``` 
 This command will return a json format with all the Energy Resources available in database.
 
-##### Search request all Energy Resources
+##### Search request for Energy Resources
 It is also possible to select Energy Resources, according to the following parameters:
 - type: solar, wind, hydro, nuclear ...etc
 - status: active, inactive, maintenance
