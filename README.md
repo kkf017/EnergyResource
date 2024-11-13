@@ -1,1 +1,1 @@
-# EnergyResource
+# Example of Django app
