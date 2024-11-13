@@ -85,7 +85,7 @@ curl -X GET -H "Accept: application/json" http://127.0.0.1:8000/energy/search?st
 It is also possible to go to the url with your web browser.
 
 ### Request POST
-A new request can be created with the following request:
+A new Energy ressource can be created with the following request:
 ```sh
 # Example of URL to create a ressource called "Biomass place 1"
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Biomass place 1", "type": "biomass", "capacity": "175", "location": "Location I", "status": "active"}' http://127.0.0.1:8000/new/
