@@ -32,10 +32,10 @@ poetry run python3 manage.py runserver
 ## Home-made commands
 To fill the database, one of the following commands can be used:
 ```python
-python3 manage.py import_energy_data [filename]
+python3 manage.py import_energy_data [filepath]
 ```  
 ```python
-poetry run python3 manage.py import_energy_data [filename]
+poetry run python3 manage.py import_energy_data [filepath]
 ``` 
 
 To clear the database, one of the following commands can be used:
