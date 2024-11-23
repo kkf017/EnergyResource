@@ -28,6 +28,10 @@ python3 manage.py runserver
 ```python
 poetry run python3 manage.py runserver
 ```
+In case of error with Poetry, run the command:
+```python
+poetry update package
+```
 
 ## Home-made commands
 To fill the database, one of the following commands can be used:
