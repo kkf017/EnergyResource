@@ -3,28 +3,32 @@
 This app is an example of Django app (back-end) to manage Energy resources.
 
 ## Prerequisites
-Make sure you have poetry:
+Install poetry:
+```python
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+Open the ~/.bashrc file using nano:
+```shell
+nano ~/.bashrc
+```
+Add export PATH="/home/user/.local/bin:$PATH" to your shell configuration file.
+```shell
+. . .
+export PATH="/home/user/.local/bin:$PATH"
+```
+Next, apply the changes:
+```shell
+source ~/.bashrc
+```
+
+Check your installation:
 ```python
 poetry --version
 ```
 
-Make sure you have Django:
-```python
-pip3 install Django
-```
-
-Make sure you have rest_framework:
-```python
-pip3 install djangorestframework
-pip3 install markdown       
-pip3 install django-filter 
-```
-
 ## Run the project
-Run one of the following commands (in the /services/ directory):
-```python
-python3 manage.py runserver
-```
+Run the following command (in the /services/ directory):
 ```python
 poetry run python3 manage.py runserver
 ```
@@ -34,18 +38,12 @@ poetry update package
 ```
 
 ## Home-made commands
-To fill the database, one of the following commands can be used:
-```python
-python3 manage.py import_energy_data [filepath]
-```  
+To fill the database, the following command can be used:
 ```python
 poetry run python3 manage.py import_energy_data [filepath]
 ``` 
 
-To clear the database, one of the following commands can be used:
-```python
-python3 manage.py clear_data
-```  
+To clear the database, the following command can be used:
 ```python
 poetry run python3 manage.py clear_data
 ``` 
@@ -102,6 +100,27 @@ Finally, an Energy ressource can be deleted (using its id in table - eid) with t
 ```sh
 # Example of URL to delete ressource with eid 4c7a2745227fd92f5381d4dfce69468e5df1c348
 curl -X DELETE http://127.0.0.1:8000/close?eid=4c7a2745227fd92f5381d4dfce69468e5df1c348
-``` 
+```
+
+
+
+## Manage errors
+
+In case of error, install Django:
+```python
+pip3 install Django
+```
+
+Install rest_framework:
+```python
+pip3 install djangorestframework
+pip3 install markdown       
+pip3 install django-filter 
+```
+
+Run the project with classical Django commands:
+```python
+python3 manage.py runserver
+```
 
 
