@@ -1,6 +1,6 @@
 # Bonus: Example of Dashboard
 
-This app is a (simple) example of User interface (front-end) to manage Energy resources. This interface ca be completed (with graphs, maps, statistics, user information ...etc).
+This app is a (simple) example of User interface (front-end) to manage Energy resources. This interface can be completed (with graphs, maps, statistics, user information ...etc).
 
 ## Prerequisites
 Install  Node.js:
